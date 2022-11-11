@@ -1,13 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import PopularMovies from './components/PopularMovies/PopularMovies';
+import Searchbar from './components/Searchbar/Searchbar';
+import Footer from './layout/Footer/Footer';
+import Header from './layout/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        HELLO WORLD
-      </header>
+      <Header />
+      <Searchbar />
+      <PopularMovies />
+      <Footer />
     </div>
   );
 }

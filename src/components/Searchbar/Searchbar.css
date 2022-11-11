@@ -1,0 +1,12 @@
+.searchbar {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.searchB {
+    width: 40%;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
