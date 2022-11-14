@@ -1,35 +1,39 @@
 import './Header.css'
+import { BrowserRouter as Router, Routes, Route, Link, Outlet } from "react-router-dom";
 
 function Header() {
     return (
+        <>
         <header className="container">
             <img width="200" height="50" src="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/e5/e0/bd/e5e0bd61-9814-9e4b-ee32-a017746363f6/source/256x256bb.jpg" className="App-logo"></img>
             <div>
                 <ul className="navbar">
                     <li>
-                        <a href="https://cuevana3.com.mx/inicio/">Inicio</a>
+                        <Link className='links' to="home">Inicio</Link>
                     </li>
                     <li>
-                        <a href="https://cuevana3.com.mx/peliculas/">Películas</a>
+                        <Link className='links' to="movies">Películas</Link>
                     </li>
                     <li>
-                        <a href="https://cuevana3.com.mx/series/">Series</a>
+                        <Link className='links' to="series">Series</Link>
                     </li>
                     <li>
-                        <a href="https://cuevana3.com.mx/genero/">Géneros</a>
+                        <Link className='links' to="genres">Géneros</Link>
                     </li>
                     <li>
-                        <a href="https://cuevana3.com.mx/blog/">Lista</a>
+                        <Link className='links' to="list">Lista</Link>
                     </li>
                     <li>
-                        <a href="https://cuevana3.com.mx/privacy-policy/">Privacy Policy</a>
+                        <Link className='links' to="privacy-policy">Privacy Policy</Link>
                     </li>
                     <li>
-                        <a href="https://cuevana3.com.mx/contact-us/">Contact US</a>
+                        <Link className='links' to="contact">Contact US</Link>
                     </li>
                 </ul>
             </div>
         </header>
+        <Outlet/>
+        </>
     )
 }
 

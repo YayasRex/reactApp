@@ -26,7 +26,7 @@ ul {
     gap: 55px;
 }
 
-a {
+.links {
     display: flex;
     align-items: center;
     color: #ffffff;
@@ -36,7 +36,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+.links:hover {
     background-color: #00bbff;
     border-radius: 5px;
     color: black;
